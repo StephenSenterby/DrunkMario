@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111827">
+  <title>Drunk Mario · One wobbly adventure</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/phaser@3.90.0/dist/phaser.min.js"></script>
+  <script defer src="game.js"></script>
+</head>
+<body>
+  <main class="shell">
+    <header class="masthead">
+      <div><p class="eyebrow">A VERY UNSTEADY PLATFORMER</p><h1>Drunk<span>Mario</span><span class="title-dot">.</span></h1></div>
+      <span class="badge">UNOFFICIAL PARODY</span>
+    </header>
+    <section class="game-panel" aria-labelledby="game-title">
+      <div class="game-toolbar"><h2 id="game-title">01 <span>The long way home</span></h2><button id="restart" type="button">↻ Start over</button></div>
+      <div id="game" tabindex="0" role="region" aria-label="Platformer game. Use left and right arrows or A and D to move. Space, W, or up arrow to jump. Reach the flag. Focus here to play." aria-describedby="instructions"></div>
+      <p id="game-status" class="status" role="status" aria-live="polite">Loading the neighborhood…</p>
+      <div class="touch-controls" aria-label="Game controls">
+        <div><button type="button" data-control="left" aria-label="Move left">←</button><button type="button" data-control="right" aria-label="Move right">→</button></div>
+        <button type="button" data-control="jump" class="jump-button">Jump ↑</button>
+      </div>
+    </section>
+    <footer id="instructions"><p><kbd>←</kbd> <kbd>→</kbd> or <kbd>A</kbd> <kbd>D</kbd> move <span>·</span> <kbd>Space</kbd> jump</p><p>Slippery shoes. Late jumps. Questionable balance.</p></footer>
+  </main>
+</body>
+</html>
